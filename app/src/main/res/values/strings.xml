@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ViewFlipper</string>
+    <string name="automatic_viewflipper" />
+    <string name="manual_viewflipper" />
+    <string name="automatic_view_flipper">Automatic View Flipper</string>
+    <string name="manual_viewflipper1">Manual ViewFlipper</string>
+    <string name="quit_app">Quit App</string>
+    <string name="demo_button">Demo button</string>
+</resources>
