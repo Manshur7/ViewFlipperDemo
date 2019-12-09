@@ -41,6 +41,11 @@ This piece of code demonstrates the use of:<br/>
 
 Below is part of the code for the automatic Flip:<br/> automatic.java<br/>
 ```
+/*
+    Author: Manshur Ramhith
+    Description: This activity implements automatic switches from one view of the ViewFlipper to another with a fixed interval in       between them. Also I added a textview Dynamically to show that it is not mandatory to add it in the XML File
+    Date: 12/05/19
+ */
 public class automatic extends AppCompatActivity {
     private ViewFlipper viewFlipper;
 
@@ -55,9 +60,12 @@ public class automatic extends AppCompatActivity {
         textView.setText("This TextView is added in code dynamically ");
         textView.setGravity(Gravity.CENTER);
 
+        //Dynamically adding a textview to a ViewFlipper
         viewFlipper.addView(textView);
 
+        //Set a fixed interval between switches
         viewFlipper.setFlipInterval(2000);
+        //Start the flipping process automatically
         viewFlipper.startFlipping();
 
     }
@@ -76,8 +84,7 @@ Here is what your XML file should look like (activity_automatic.xml): <br/>
         android:id="@+id/view_flipper"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:inAnimation="@android:anim/slide_in_left"
-        android:outAnimation="@android:anim/slide_out_right">
+        >
 
         <Button
             android:layout_width="wrap_content"
