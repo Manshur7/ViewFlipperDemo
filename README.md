@@ -1,4 +1,4 @@
-                                                     # ViewFlipper Blog
+   # ViewFlipper Blog <center/>
 ## Introduction
 ViewFlipper forms part of the class ViewAnimator and its main function is to switch from one view to another. In other words, it is sort of a transition widget which helps coders make a transition from one screen to another easier and more interesting. In addition to that, transition on the views inside the ViewFlipper can be made better by using animations. Moreover, this flipping feature can be used regardless of the types of the views selected. For example, we can use ViewFlipper to change from a TextView to an ImageView/Button/etc. It does not have to be TextView to TextView or ImageView to ImageView and so on. Furthermore, it can be set to automatically transition from one view to another by using an already available method.
 
