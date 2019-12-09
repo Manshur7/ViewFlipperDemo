@@ -7,8 +7,16 @@ import android.view.Gravity;
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
+/*
+    Author: Manshur Ramhith
+    Description: This activity implements automatic switches from one view of the ViewFlipper to another with a fixed interval in between them
+                    Also I added a textview Dynamically to show that it is not mandatory to add it in the XML File
+    Date: 12/05/19
+
+ */
 
 public class automatic extends AppCompatActivity {
+
     private ViewFlipper viewFlipper;
 
     @Override
@@ -24,7 +32,9 @@ public class automatic extends AppCompatActivity {
 
         viewFlipper.addView(textView);
 
+        //Set a fixed interval between switches
         viewFlipper.setFlipInterval(2000);
+        //Start the flipping process automatically
         viewFlipper.startFlipping();
 
 
