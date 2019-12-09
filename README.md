@@ -6,8 +6,8 @@ ViewFlipper forms part of the class ViewAnimator and its main function is to swi
 We can say that ViewFlipper is pretty much ancient into the Android world as it was introduced with the first release of Android API level 1 which is also known as version code "BASE". However, it is still widely used and is currently compatible with the latest release of Android API level 29.
 
 ## Major Methods & Attributes
-ViewFlipper makes use of a wide variety of methods and attributes which are both dedicated and inherited. There are mainly two dedicated XML attributes: 
-android:autoStart	 
+ViewFlipper makes use of a wide variety of methods and attributes which are both dedicated and inherited. There are mainly two dedicated XML attributes:<br/>
+android:autoStart	 <br/>
 android:flipInterval
 
 And way too many inherited XML attributes but fortunately, they can be compressed into only 4 classes, namely:
