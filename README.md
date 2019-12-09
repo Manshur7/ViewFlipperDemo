@@ -62,6 +62,7 @@ public class automatic extends AppCompatActivity {
 
     }
 ```
+Here is what your xml file should look like (activity_automatic.xml): <br/>
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
