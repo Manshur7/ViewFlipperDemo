@@ -33,10 +33,15 @@ void onDetachedFromWindow() -This is called when the view has been detached from
 void onWindowVisibilityChanged(int visibility) -Called when the window containing has change its visibility which can be of 3 states: GONE, INVISIBLE, and VISIBLE.<br/>
 
 ## Code Description & Example
-In my code, I obviously was not able to use all the methods and attributes of ViewFlipper. I have built the demo app in such a way that it provides a seperate intent for automatic View Flipping and Manual View Flipping
+In my code, I obviously was not able to use all the methods and attributes of ViewFlipper. I have built the demo app in such a way that it provides a seperate intent for automatic View Flipping and Manual View Flipping.
+This piece of code demonstrates the use of:<br/>
+•Adding a textview in the code using VIewFlipper.addView()<br/>
+•Using the automated flipping with ViewFlipper.StartFlipping()<br/>
+•Setting a timer(interval) between switches using setFlipInterval()<br/>
 
+Below is part of the code for the automatic Flip:<br/>
 ```
-ublic class automatic extends AppCompatActivity {
+public class automatic extends AppCompatActivity {
     private ViewFlipper viewFlipper;
 
     @Override
