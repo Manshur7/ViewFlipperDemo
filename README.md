@@ -33,7 +33,7 @@ void onDetachedFromWindow() -This is called when the view has been detached from
 void onWindowVisibilityChanged(int visibility) -Called when the window containing has change its visibility which can be of 3 states: GONE, INVISIBLE, and VISIBLE.<br/>
 
 ## Code Description & Example
-![Example of project] (https://github.com/Manshur7/ViewFlipperDemo/blob/master/VfPic.PNG)
+![Example Image](https://github.com/Manshur7/ViewFlipperDemo/blob/master/VfPic.PNG) <br/>
 Please find my code for the whole demo here: https://github.com/Manshur7/ViewFlipperDemo <br/>
 In my code, I obviously was not able to use all the methods and attributes of ViewFlipper. I have built the demo app in such a way that it provides a seperate intent for automatic View Flipping and Manual View Flipping.
 This piece of code demonstrates the use of:<br/>
