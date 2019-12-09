@@ -116,5 +116,5 @@ A general summary on how to create and use a ViewFlipper:
 4. Finally, we set the interval and start the flipping process for the automatic one OR we create a listener when user interacts with      the next/previous buttons for the manual one.<br/>
 
 ## Reference
-https://abhiandroid.com/ui/viewflipper
-https://developer.android.com/reference/android/widget/ViewFlipper
+https://abhiandroid.com/ui/viewflipper <br/>
+https://developer.android.com/reference/android/widget/ViewFlipper <br/>
