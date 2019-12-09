@@ -18,13 +18,13 @@ class android.view.View
 
 As mentioned earlier, ViewFlipper also makes use of many methods and as for any other widget, these methods are both public and protected. Below, I have separated the public and protected methods into two different sections.
 #### Public Methods:
-CharSequence getAccessibilityClassName() -Return the class name of an object to be used for accessibility purposes.<br/>
+CharSequence getAccessibilityClassName() -Return the class name of an object for accessibility purposes.<br/>
 int getFlipInterval() -Get the delay before flipping to the next view occurs.<br/>
-Boolean isAutoStart() -Returns true if this view automatically calls startFlipping() when it becomes attached to a window.<br/>
-Boolean isFlipping() -Returns true if the child views are flipping.<br/>
+Boolean isAutoStart() -Returns true if this view automatically calls startFlipping() on attaching to a window<br/>
+Boolean isFlipping() -Returns true if the child views are awitching among themselves.<br/>
 void setAutoStart(boolean autoStart) -Set if a view automatically calls startFlipping() when it becomes attached to a window.<br/>
 void setFlipInterval(int milliseconds) -Sets wait time before flipping to the next view in milliseconds.<br/>
-void startFlipping() -Start a timer to cycle through child views.<br/>
+void startFlipping() -Start a timer to go through child views of the ViewFlipper.<br/>
 void stopFlipping() -Method to discontinue the flips
 
 #### Protected Methods:
