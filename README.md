@@ -10,34 +10,25 @@ ViewFlipper makes use of a wide variety of methods and attributes which are both
 android:autoStart	 <br/>
 android:flipInterval
 
-And way too many inherited XML attributes but fortunately, they can be compressed into only 4 classes, namely:
-class android.widget.ViewAnimator
-class android.widget.FrameLayout
-class android.view.ViewGroup
+And way too many inherited XML attributes but fortunately, they can be compressed into only 4 classes, namely:<br/>
+class android.widget.ViewAnimator<br/>
+class android.widget.FrameLayout<br/>
+class android.view.ViewGroup<br/>
 class android.view.View
 
 As mentioned earlier, ViewFlipper also makes use of many methods and as for any other widget, these methods are both public and protected. Below, I have separated the public and protected methods into two different sections.
 ### Public Methods:
-CharSequence getAccessibilityClassName() -Return the class name of an object to be used for accessibility purposes.
-
-int getFlipInterval() -Get the delay before flipping to the next view occurs.
-
-Boolean isAutoStart() -Returns true if this view automatically calls startFlipping() when it becomes attached to a window.
-
-Boolean isFlipping() -Returns true if the child views are flipping.
-
-void setAutoStart(boolean autoStart) -Set if a view automatically calls startFlipping() when it becomes attached to a window.
-
-void setFlipInterval(int milliseconds) -Sets wait time before flipping to the next view in milliseconds.
-
-void startFlipping() -Start a timer to cycle through child views.
-
+CharSequence getAccessibilityClassName() -Return the class name of an object to be used for accessibility purposes.<br/>
+int getFlipInterval() -Get the delay before flipping to the next view occurs.<br/>
+Boolean isAutoStart() -Returns true if this view automatically calls startFlipping() when it becomes attached to a window.<br/>
+Boolean isFlipping() -Returns true if the child views are flipping.<br/>
+void setAutoStart(boolean autoStart) -Set if a view automatically calls startFlipping() when it becomes attached to a window.<br/>
+void setFlipInterval(int milliseconds) -Sets wait time before flipping to the next view in milliseconds.<br/>
+void startFlipping() -Start a timer to cycle through child views.<br/>
 void stopFlipping() -Method to discontinue the flips
 
 ### Protected Methods:
-void onAttachedToWindow() -This is called to attach the view to a window.
-
-void onDetachedFromWindow() -This is called when the view has been detached from a window.
-
-void onWindowVisibilityChanged(int visibility) -Called when the window containing has change its visibility which can be of 3 states: GONE, INVISIBLE, and VISIBLE.
+void onAttachedToWindow() -This is called to attach the view to a window.<br/>
+void onDetachedFromWindow() -This is called when the view has been detached from a window.<br/>
+void onWindowVisibilityChanged(int visibility) -Called when the window containing has change its visibility which can be of 3 states: GONE, INVISIBLE, and VISIBLE.<br/>
 
