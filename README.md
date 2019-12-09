@@ -1,4 +1,4 @@
-align="center"> # ViewFlipper Blog <center/>
+# ViewFlipper Blog <center/>
 ## Introduction
 ViewFlipper forms part of the class ViewAnimator and its main function is to switch from one view to another. In other words, it is sort of a transition widget which helps coders make a transition from one screen to another easier and more interesting. In addition to that, transition on the views inside the ViewFlipper can be made better by using animations. Moreover, this flipping feature can be used regardless of the types of the views selected. For example, we can use ViewFlipper to change from a TextView to an ImageView/Button/etc. It does not have to be TextView to TextView or ImageView to ImageView and so on. Furthermore, it can be set to automatically transition from one view to another by using an already available method.
 
@@ -33,6 +33,7 @@ void onDetachedFromWindow() -This is called when the view has been detached from
 void onWindowVisibilityChanged(int visibility) -Called when the window containing has change its visibility which can be of 3 states: GONE, INVISIBLE, and VISIBLE.<br/>
 
 ## Code Description & Example
+![Example of project] (https://github.com/Manshur7/ViewFlipperDemo/blob/master/VfPic.PNG)
 Please find my code for the whole demo here: https://github.com/Manshur7/ViewFlipperDemo <br/>
 In my code, I obviously was not able to use all the methods and attributes of ViewFlipper. I have built the demo app in such a way that it provides a seperate intent for automatic View Flipping and Manual View Flipping.
 This piece of code demonstrates the use of:<br/>
