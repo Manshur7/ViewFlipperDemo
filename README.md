@@ -39,7 +39,7 @@ This piece of code demonstrates the use of:<br/>
 •Using the automated flipping with ViewFlipper.StartFlipping()<br/>
 •Setting a timer(interval) between switches using setFlipInterval()<br/>
 
-Below is part of the code for the automatic Flip:<br/>
+Below is part of the code for the automatic Flip:<br/> automatic.java<br/>
 ```
 public class automatic extends AppCompatActivity {
     private ViewFlipper viewFlipper;
@@ -62,3 +62,54 @@ public class automatic extends AppCompatActivity {
 
     }
 ```
+```
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".automatic">
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Button" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/img" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView1"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </ViewFlipper>
+</RelativeLayout>
+```
+A general summary on how to create and use a ViewFlipper:
+
+1. Create a ViewFlipper in your xml file <br/>
+2. Inside that xml file, define what is going to be inside that viewFLipper, for e.g: ImageView and/or TextView and/or button <br/>
+3. Create a variable of type ViewFLipper to hold the ViewFlipper in your Java file (Here e.g: automatic.java) <br/>
+4. Finally, we set the interval and start the flipping process for the automatic one OR we create a listener when user interacts with      the next/previous buttons for the manual one.<br/>
