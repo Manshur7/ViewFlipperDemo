@@ -62,7 +62,7 @@ public class automatic extends AppCompatActivity {
 
     }
 ```
-Here is what your xml file should look like (activity_automatic.xml): <br/>
+Here is what your XML file should look like (activity_automatic.xml): <br/>
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -114,3 +114,7 @@ A general summary on how to create and use a ViewFlipper:
 2. Inside that xml file, define what is going to be inside that viewFLipper, for e.g: ImageView and/or TextView and/or button <br/>
 3. Create a variable of type ViewFLipper to hold the ViewFlipper in your Java file (Here e.g: automatic.java) <br/>
 4. Finally, we set the interval and start the flipping process for the automatic one OR we create a listener when user interacts with      the next/previous buttons for the manual one.<br/>
+
+## Reference
+https://abhiandroid.com/ui/viewflipper
+https://developer.android.com/reference/android/widget/ViewFlipper
