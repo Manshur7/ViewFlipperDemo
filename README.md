@@ -40,7 +40,7 @@ This piece of code demonstrates the use of:<br/>
 •Using the automated flipping with ViewFlipper.StartFlipping()<br/>
 •Setting a timer(interval) between switches using setFlipInterval()<br/>
 
-Below is part of the code for the automatic Flip:<br/> automatic.java<br/>
+Below is part of the code for the automatic Flip (automatic.java): <br/>
 ```
 /*
     Author: Manshur Ramhith
