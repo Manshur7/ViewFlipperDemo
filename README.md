@@ -32,3 +32,28 @@ void onAttachedToWindow() -This is called to attach the view to a window.<br/>
 void onDetachedFromWindow() -This is called when the view has been detached from a window.<br/>
 void onWindowVisibilityChanged(int visibility) -Called when the window containing has change its visibility which can be of 3 states: GONE, INVISIBLE, and VISIBLE.<br/>
 
+## Code Description & Example
+In my code, I obviously was not able to use all the methods and attributes of ViewFlipper. I have built the demo app in such a way that it provides a seperate intent for automatic View Flipping and Manual View Flipping
+
+```
+ublic class automatic extends AppCompatActivity {
+    private ViewFlipper viewFlipper;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_automatic);
+        setupTitleandHomeButton();
+
+        viewFlipper = findViewById(R.id.view_flipper);
+        TextView textView = new TextView(this);
+        textView.setText("This TextView is added in code dynamically ");
+        textView.setGravity(Gravity.CENTER);
+
+        viewFlipper.addView(textView);
+
+        viewFlipper.setFlipInterval(2000);
+        viewFlipper.startFlipping();
+
+    }
+```
